@@ -6,10 +6,10 @@
     
     <title> GreenBuddy</title>
     <link rel="icon" type="images/x-icon" href="images/stickerpl.png">
-    
+    <script src="jsfile.js"></script>
     <style>
         html{
-            background:linear-gradient(to right, rgb(13, 12, 98), rgb(8, 78, 52), black);
+            background: url(images/finbg.jfif);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -22,9 +22,9 @@
             padding:10px;
         }
         h1{
-           font-size:40px;
-           padding-top: 5%;
-           padding-bottom: 1%;
+           font-size:50px;
+           padding-top: 10%;
+          
         }
         input[type=text]{
             width:15%;
@@ -48,12 +48,16 @@
         }
         
         form > p{
-         font-size: 20px;;
+         font-size: 25px;;
         }
         h1{
             animation: type 10s ;
             overflow: hidden;
             margin:0 auto;
+        }
+        h2{
+            font-size:40px;
+            padding-top: -10px;
         }
         @keyframes type{
             from{ width:0}
@@ -63,28 +67,33 @@
     </style>
     
     <script>
-        function right(){
-            let tr = document.forms["nam"]["oknam"].value;
-            if (tr==""){
-                alert("Enter any valid name");
-                return false;
-            }
-        }
-       
-       function navigate(){
+        function navigate(){
         window.location.href= "nextpage.html";
        }
 
+        function right(){
+            let tr = document.forms["nam"]["onam"].value;
+            
+            if (tr==""){
+                alert("Not a valid name");
+                return false;
+            }
+            else { 
+                alert("meet your green buddy!")
+                return false;
+            };
+        }
+      
      </script>
 </head>
 <body>
     <h1>GreenBuddy</h1>
-    <h2>Grow your own <span style="color:#439647"> Virtual tree.</span></h2>
-    <img src="images/stickerpl.png" alt="Plant">
-    <form name="nam" onsubmit="return right()">
-     <p>Name your green friend:</p>
-        <input type="text" name="oknam"  method="post" placeholder="  Enter Name here:"><br>
-        <input  onclick="navigate()" type="submit" value="Submit" ><br>
+    <h2 >Grow your own <span style="color:#003102"> Virtual tree.</span></h2>
+    <!-- <img src="images/stickerpl.png" alt="Plant"> -->
+    <form name="nam" onsubmit=" return right()">
+     <p style="color:#003102"><b>Name your green friend:</b></p>
+        <input type="text" name="onam" method="post" placeholder="  Enter Name here:"><br>
+        <input  onclick="navigate()" type="submit" value="Let's go" ><br>
        
     </form>
      <canvas id="myc"></canvas>

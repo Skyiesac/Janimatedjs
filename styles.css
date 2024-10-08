@@ -8,7 +8,31 @@
     background-size:cover;
     background-attachment: fixed;
 }
-.im1{
-   height:700px;
-
+body .okay{
+    align-items:center;
+    text-align: center;
+}
+#tree{
+    height: 600px;
+    width:450px;
+    padding-top:30px;
+    padding-bottom:10px;
+}
+#grw{
+    height:50px;
+    width:100px;
+ padding:10px;
+ color:white;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ box-shadow: -1px -5px 15px #41465b , 5px 5px 15px #41465b;
+ border-radius: 5px;
+ cursor:grab;
+}
+#grw:hover{
+    box-shadow:1px 1px 14px #20232e, -1px -1px 13px #545b78;
+}
+#idk{
+    color:white;
+    padding:10px;
+    font-size:30px;
 }
