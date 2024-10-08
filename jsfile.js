@@ -34,5 +34,5 @@ function timetoby(){
     document.getElementById('idk').innerHTML= " It's the time to say good bye, mate .Thankyou for raising me up. Please help me in raising this little guy !" ;
 }
 function back(){
-document.getElementById('idk').innerHTML="Hey! Please help me in growing up ,kind soul!";
+document.getElementById('idk').innerHTML="Hey! Please help me in growing up ,kind soul and don't forget , I need water and sunlight to grow too !";
 }

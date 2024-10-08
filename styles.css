@@ -1,31 +1,42 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+   
     overflow:hidden;
-    background: linear-gradient(rgb(1, 65, 54), black);
+}
+body{
+    background-image: url('images/night.jfif');
+    
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
+    
 }
 body .okay{
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
     align-items:center;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
 }
 #tree{
     height: 600px;
     width:450px;
-    padding-top:30px;
+    
     padding-bottom:10px;
 }
-#grw{
+#grw, #rainy, #sunl{
     height:50px;
-    width:100px;
- padding:10px;
- color:white;
+ padding:15px;
+ font-size:15px;
+ color:rgb(0, 0, 0);
  font-family:Verdana, Geneva, Tahoma, sans-serif;
  box-shadow: -1px -5px 15px #41465b , 5px 5px 15px #41465b;
- border-radius: 5px;
+ border-radius: 7px;
  cursor:grab;
 }
 #grw:hover{
@@ -35,4 +46,12 @@ body .okay{
     color:white;
     padding:10px;
     font-size:30px;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
 }
