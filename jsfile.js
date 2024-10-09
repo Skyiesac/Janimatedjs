@@ -27,6 +27,7 @@ i++;
 if(i==disarr.length || i==(disarr.length-1))timetoby();
 if (i >= disarr.length) {i = 0;  back()}
 toshow.src = disarr[i];
+glow();
 ;
 }
 
@@ -35,4 +36,9 @@ function timetoby(){
 }
 function back(){
 document.getElementById('idk').innerHTML="Hey! Please help me in growing up ,kind soul and don't forget , I need water and sunlight to grow too !";
+}
+
+function glow(){
+    glow=!glow;
+    
 }

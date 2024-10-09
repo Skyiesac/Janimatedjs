@@ -74,3 +74,4 @@ document.getElementById('sunl').addEventListener('click', () => {
         document.getElementById('sunl').innerText = 'DAY'; 
     }
 });
+
